@@ -12,9 +12,42 @@ body {
 a {
   color: #1e6bb8;
   text-decoration: none; }
-  a:hover {
-    text-decoration: underline; }
+a:hover {
+    text-decoration: underline;
+}
+.hover-img{
+  position: relative;
+  cursor: zoom-in;
+  border-bottom: 1px dashed #ccc;
+  white-space: nowrap;
+}
+.hover-img img{
+  display: none;
+}
 
+.hover-img:hover img{
+  display: block;
+  position: absolute;
+  top: 35px;
+right: 0;
+box-shadow: 5px 5px 25px #333;
+border-radius: 1px;
+}
+
+nav{
+  width: 100%;
+  background: #eee;
+  text-align: center;
+}
+nav a{
+  display: inline-block;
+  height: 44px;
+  padding: 10px;
+}
+nav .centered{
+  max-width: 64rem;
+  margin: 0 auto;
+}
 .btn {
   display: inline-block;
   margin-bottom: 1rem;
@@ -90,7 +123,7 @@ a {
 .project-tagline {
   margin-bottom: 2rem;
   font-weight: normal;
-  opacity: 0.7; }
+  opacity: 1; }
 
 @media screen and (min-width: 64em) {
   .project-tagline {
@@ -224,6 +257,18 @@ a {
   padding-top: 2rem;
   margin-top: 2rem;
   border-top: solid 1px #eff0f1; }
+.site-footer a {
+  opacity: 0.5;
+}
+.site-footer a:hover,.site-footer a:hover img, .site-footer a img:hover {
+  opacity: 1;
+}
+.site-footer a img{
+  opacity: 0.5;
+  float: left;
+  padding: 8px;
+
+}
 
 .site-footer-owner {
   display: block;
