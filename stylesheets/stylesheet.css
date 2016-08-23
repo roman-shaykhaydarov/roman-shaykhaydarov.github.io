@@ -34,7 +34,7 @@ box-shadow: 5px 5px 25px #333;
 border-radius: 1px;
 }
 
-nav{
+nav.menu{
   width: 100%;
   background: #eee;
   text-align: center;
