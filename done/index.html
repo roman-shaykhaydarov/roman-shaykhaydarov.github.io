@@ -11,24 +11,14 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen">
   <link rel="stylesheet" type="text/css" href="../stylesheets/github-light.css" media="screen">
-  <style>
-    iframe {
 
-      display: none;
-    }
-  </style>
   <script>
-  for (var i = 0; i < window.frames.length; i++) {
-    window.frames[i].stop()
-  }
 
 
-  (function () {
-    var details = document.getElementsByTagName("details");
-    for (var i = 0; i < details.length; i++) {
-      console.log(details[i].open)
+
+    function loadIframe (){
+        this.childNodes[3].src = this.childNodes[3].dataset.src;
     }
-})();
 
 
 
@@ -47,7 +37,7 @@
   </nav>
   <header class="page-header">
     <h1 class="project-name">Шайхайдаров Роман Валерьевич</h1>
-    <h2 class="project-tagline">Кандидат в депутаты Законодательного Собрания Санкт-Петербурга шестого созыва по <span class="hover-img">одномандатному избирательному округу № 13 <img src="../map.jpg"></span></h2>
+    <h2 class="project-tagline">Кандидат в депутаты Законодательного Собрания Санкт-Петербурга шестого созыва по <span class="hover-img">одномандатному избирательному округу № 13 <img data-src="../map.jpg"></span></h2>
     <nav class="quick-links">
       <a href="http://romanspb.ru/support#do">
         Помочь делом
@@ -65,185 +55,188 @@
     <h3>Чего уже удалось добиться и как я это делал</h3>
       <ol>
         <li><h4>Работы по сохранению и перображению парка 300 летия</h4>
-          <details>
+          <details onclick="loadIframe.call(this)">
             <summary>Телеканал «Санкт-Петербург», передача «Нужное подчеркнуть»: Защита парка 300-летия</summary>
-            <iframe src="https://vk.com/video_ext.php?oid=-60993553&id=171893152&hash=c617720ea4b6b0dd&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
+            <iframe data-src="https://vk.com/video_ext.php?oid=-60993553&id=171893152&hash=c617720ea4b6b0dd&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
           </details>
-          <details>
+          <details onclick="loadIframe.call(this)">
             <summary>ТКТ-ТВ: Удастся ли оградить участок парка 300-летия от застройки?</summary>
-            <iframe src="//vk.com/video_ext.php?oid=-60993553&id=171746785&hash=8966b9d8e705f5b8&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
+            <iframe data-src="//vk.com/video_ext.php?oid=-60993553&id=171746785&hash=8966b9d8e705f5b8&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
           </details>
-          <details>
+          <details onclick="loadIframe.call(this)">
             <summary>Покос травы в парке 300-летия</summary>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/yGRSLU3rR0U" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" data-src="https://www.youtube.com/embed/yGRSLU3rR0U" frameborder="0" allowfullscreen></iframe>
           </details>
-          <details>
+          <details onclick="loadIframe.call(this)">
             <summary>В парке 300-летия Санкт-Петербурга появилась аллея Семьи, Любви и Верности</summary>
-            <iframe width="420" height="315" src="https://www.youtube.com/embed/3_DPOC-PwZQ" frameborder="0" allowfullscreen></iframe>
+            <iframe width="420" height="315" data-src="https://www.youtube.com/embed/3_DPOC-PwZQ" frameborder="0" allowfullscreen></iframe>
           </details>
-          <details>
+          <details onclick="loadIframe.call(this)">
             <summary>Life78: В парке 300-летия Петербурга скульптуры Церетели не нужны (Роман Шайхайдаров)</summary>
-            <iframe src="//vk.com/video_ext.php?oid=-60993553&id=171839290&hash=7fd29bbbe7c9827b&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
+            <iframe data-src="//vk.com/video_ext.php?oid=-60993553&id=171839290&hash=7fd29bbbe7c9827b&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
           </details>
-          <details>
+          <details onclick="loadIframe.call(this)">
             <summary>Участок возле парка 300-летия не включили в список зеленых зон.
             </summary>
-            <iframe src="//vk.com/video_ext.php?oid=-71533306&id=171759983&hash=e0c5df768d15f327&hd=1" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+            <iframe data-src="//vk.com/video_ext.php?oid=-71533306&id=171759983&hash=e0c5df768d15f327&hd=1" width="640" height="360" frameborder="0" allowfullscreen></iframe>
           </details>
-          <details>
+          <details onclick="loadIframe.call(this)">
             <summary>Защитники парка 300-летия устраивают протестный флешмоб в Петербурге
             </summary>
-            <iframe width="640" height="360" src="//www.ntv.ru/embed/1262541" frameborder="0" allowfullscreen></iframe>
+            <iframe width="640" height="360" data-src="//www.ntv.ru/embed/1262541" frameborder="0" allowfullscreen></iframe>
           </details>
-          <details>
+          <details onclick="loadIframe.call(this)">
             <summary>На границе парка 300-летия может появиться новая стройка</summary>
-            <iframe src="//vk.com/video_ext.php?oid=-60993553&id=171889757&hash=13ac36903a25cf32&hd=1" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+            <iframe data-src="//vk.com/video_ext.php?oid=-60993553&id=171889757&hash=13ac36903a25cf32&hd=1" width="640" height="360" frameborder="0" allowfullscreen></iframe>
           </details>
-          <details>
+          <details onclick="loadIframe.call(this)">
             <summary>  В поисках закладного камня.</summary>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/yIw2vMgW7Cs" frameborder="0" allowfullscreen></iframe>
+              <iframe width="560" height="315" data-src="https://www.youtube.com/embed/yIw2vMgW7Cs" frameborder="0" allowfullscreen></iframe>
           </details>
-          <details>
+          <details onclick="loadIframe.call(this)">
             <summary>Изменения в закон о ЗНОП. Парк 300-летия Санкт-Петербурга</summary>
-            <iframe src="//vk.com/video_ext.php?oid=-71533306&id=171751915&hash=3eced7d5c5325b70&hd=1" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+            <iframe data-src="//vk.com/video_ext.php?oid=-71533306&id=171751915&hash=3eced7d5c5325b70&hd=1" width="640" height="360" frameborder="0" allowfullscreen></iframe>
           </details>
 
-          <details>
+          <details onclick="loadIframe.call(this)">
             <summary>Губернатор Санкт-Петербурга Г.С. Полтавченко о парке 300 летия. Отчет губернатора за 2015 год</summary>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/6MFXJP7sl-k" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" data-src="https://www.youtube.com/embed/6MFXJP7sl-k" frameborder="0" allowfullscreen></iframe>
           </details>
-          <details>
+          <details onclick="loadIframe.call(this)">
             <summary>
               ТКТ-ТВ: На берегу залива предлагают создать Тихую гавань
             </summary>
-            <iframe src="//vk.com/video_ext.php?oid=-60993553&id=171703300&hash=bd63aa642b1c678a&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
+            <iframe data-src="//vk.com/video_ext.php?oid=-60993553&id=171703300&hash=bd63aa642b1c678a&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
           </details>
-          <details>
+          <details onclick="loadIframe.call(this)">
             <summary>Артмоб ПАРК</summary>
-            <iframe src="//vk.com/video_ext.php?oid=-108036428&id=171719725&hash=d0cb0a32cda8ffde&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
+            <iframe data-src="//vk.com/video_ext.php?oid=-108036428&id=171719725&hash=d0cb0a32cda8ffde&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
           </details>
         </li>
 
         <li><h4>Работы по озеленению Приморского района</h4>
 
-          <details>
+          <details onclick="loadIframe.call(this)">
             <summary>ТКТ-ТВ: Кедры в каждый двор ("Энергия Жизни", Роман Шайхайдаров)</summary>
-            <iframe src="//vk.com/video_ext.php?oid=29610232&id=169377773&hash=747089bd44c720e4&hd=1" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+            <iframe data-src="//vk.com/video_ext.php?oid=29610232&id=169377773&hash=747089bd44c720e4&hd=1" width="640" height="360" frameborder="0" allowfullscreen></iframe>
           </details>
-          <details>
+          <details onclick="loadIframe.call(this)">
             <summary>ТКТ-ТВ: На Приморском проспекте ищут неизвестных дровосеков (Роман Шайхайдаров)</summary>
-            <iframe src="//vk.com/video_ext.php?oid=-60993553&id=171689155&hash=5b2b99d73ce37f0d&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
+            <iframe data-src="//vk.com/video_ext.php?oid=-60993553&id=171689155&hash=5b2b99d73ce37f0d&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
           </details>
 
-          <details>
+          <details onclick="loadIframe.call(this)">
             <summary>НТВ: Жители Северной столицы пытаются остановить вырубку деревьев (Роман Шайхайдаров)</summary>
-            <iframe src="//vk.com/video_ext.php?oid=29610232&id=171566501&hash=c6047dc81ce4277c&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
+            <iframe data-src="//vk.com/video_ext.php?oid=29610232&id=171566501&hash=c6047dc81ce4277c&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
           </details>
-          <details>
+          <details onclick="loadIframe.call(this)">
             <summary>100ТВ - Зарядка в защиту сквера</summary>
-            <iframe src="//vk.com/video_ext.php?oid=29610232&id=168625691&hash=3fcc3a1fe446b095&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
+            <iframe data-src="//vk.com/video_ext.php?oid=29610232&id=168625691&hash=3fcc3a1fe446b095&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
           </details>
-          <details>
+          <details onclick="loadIframe.call(this)">
             <summary>ТКТ-ТВ - В защиту сквера на улице Савушкина</summary>
-            <iframe src="//vk.com/video_ext.php?oid=-56282747&id=168528443&hash=3da83634532242e1&hd=1" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+            <iframe data-src="//vk.com/video_ext.php?oid=-56282747&id=168528443&hash=3da83634532242e1&hd=1" width="640" height="360" frameborder="0" allowfullscreen></iframe>
           </details>
         </li>
 
 
         <li>
           <h4>Работы по административным проблемам Приморского района</h4>
-          <details>
+          <details onclick="loadIframe.call(this)">
             <summary>Красивый Петербург проинспектировал состояние Юнтоловского заказника</summary>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/CdEw63ypeTo" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" data-src="https://www.youtube.com/embed/CdEw63ypeTo" frameborder="0" allowfullscreen></iframe>
           </details>
-          <details>
+          <details onclick="loadIframe.call(this)">
             <summary>"Народная тропа" на Савушкина, 145 "недостаточно опасна" для установки светофора</summary>
-            <iframe width="420" height="315" src="https://www.youtube.com/embed/Y4nkdPDTkyA" frameborder="0" allowfullscreen></iframe>
+            <iframe width="420" height="315" data-src="https://www.youtube.com/embed/Y4nkdPDTkyA" frameborder="0" allowfullscreen></iframe>
           </details>
-          <details>
+          <details onclick="loadIframe.call(this)">
             <summary>Слушания по ПЗЗ в Приморском районе</summary>
-            <iframe width="420" height="315" src="https://www.youtube.com/embed/esgcWTfeEOE" frameborder="0" allowfullscreen></iframe>
+            <iframe width="420" height="315" data-src="https://www.youtube.com/embed/esgcWTfeEOE" frameborder="0" allowfullscreen></iframe>
           </details>
-          <details>
+          <details onclick="loadIframe.call(this)">
             <summary>Поправки в Генплан Приморский район</summary>
-            <iframe src="//vk.com/video_ext.php?oid=-71533306&id=171411792&hash=b36467aca8fd5df1&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
+            <iframe data-src="//vk.com/video_ext.php?oid=-71533306&id=171411792&hash=b36467aca8fd5df1&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
           </details>
-          <details>
+          <details onclick="loadIframe.call(this)">
             <summary>Life78: В Петербурге разработали приложение для борьбы с парковкой на газонах</summary>
-              <iframe src="//vk.com/video_ext.php?oid=-60993553&id=171663666&hash=6cea49660f9b67a9&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
+              <iframe data-src="//vk.com/video_ext.php?oid=-60993553&id=171663666&hash=6cea49660f9b67a9&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
           </details>
-          <details>
+          <details onclick="loadIframe.call(this)">
             <summary>ТКТ-ТВ: Несанкционированный паркинг на Приморском проспекте не могут ликвидировать с начала лета.</summary>
-            <iframe src="//vk.com/video_ext.php?oid=-60993553&id=171711067&hash=057b3165d8e25bac&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
+            <iframe data-src="//vk.com/video_ext.php?oid=-60993553&id=171711067&hash=057b3165d8e25bac&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
           </details>
-          <details>
+          <details onclick="loadIframe.call(this)">
             <summary>ТКТ-ТВ: Незаконную стоянку на Приморском проспекте демонтируют</summary>
-            <iframe src="//vk.com/video_ext.php?oid=-60993553&id=171746793&hash=c0cbc77cc9260585&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
+            <iframe data-src="//vk.com/video_ext.php?oid=-60993553&id=171746793&hash=c0cbc77cc9260585&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
           </details>
-          <details>
+          <details onclick="loadIframe.call(this)">
             <summary>Парковочный раздор: на Приморском проспекте появилась стоянка со странной системой оплаты</summary>
-            <iframe src="//vk.com/video_ext.php?oid=-71533306&id=171702803&hash=ac3ff6e7b58ebb70&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
+            <iframe data-src="//vk.com/video_ext.php?oid=-71533306&id=171702803&hash=ac3ff6e7b58ebb70&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
           </details>
-          <details>
+          <details onclick="loadIframe.call(this)">
             <summary>Новости Приморского района, выпуск от 03.09.2015</summary>
-            <iframe src="//vk.com/video_ext.php?oid=-71533306&id=171568094&hash=a2b9d56d5ac77293&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
+            <iframe data-src="//vk.com/video_ext.php?oid=-71533306&id=171568094&hash=a2b9d56d5ac77293&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
           </details>
-          <details>
+          <details onclick="loadIframe.call(this)">
             <summary>Новости Приморского района, выпуск от 18.06.2015</summary>
-            <iframe src="//vk.com/video_ext.php?oid=-71533306&id=171450153&hash=6ff3e583e6bbc6de&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
+            <iframe data-src="//vk.com/video_ext.php?oid=-71533306&id=171450153&hash=6ff3e583e6bbc6de&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
           </details>
         </li>
 
         <li>
           <h4>Работы проведенные в качестве муниципального депутата</h4>
-          <details>
+          <details onclick="loadIframe.call(this)">
             <summary>100ТВ: Муниципалы: зона ответственности (Роман Шайхайдаров)</summary>
-            <iframe src="//vk.com/video_ext.php?oid=29610232&id=169076534&hash=b1ba1d2bb29932d3&sd" width="426" height="240" frameborder="0" allowfullscreen></iframe>
+            <iframe data-src="//vk.com/video_ext.php?oid=29610232&id=169076534&hash=b1ba1d2bb29932d3&sd" width="426" height="240" frameborder="0" allowfullscreen></iframe>
           </details>
-          <details>
+          <details onclick="loadIframe.call(this)">
             <summary>Поправки в Генплан Приморский район</summary>
 
-            <iframe src="//vk.com/video_ext.php?oid=-71533306&id=171411792&hash=b36467aca8fd5df1&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
+            <iframe data-src="//vk.com/video_ext.php?oid=-71533306&id=171411792&hash=b36467aca8fd5df1&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
           </details>
-          <details>
+          <details onclick="loadIframe.call(this)">
             <summary>ТКТ-ТВ: Несанкционированный паркинг на Приморском проспекте не могут ликвидировать с начала лета.</summary>
-            <iframe src="//vk.com/video_ext.php?oid=-60993553&id=171711067&hash=057b3165d8e25bac&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
+            <iframe data-src="//vk.com/video_ext.php?oid=-60993553&id=171711067&hash=057b3165d8e25bac&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
           </details>
-          <details>
+          <details onclick="loadIframe.call(this)">
             <summary>ТКТ-ТВ: Незаконную стоянку на Приморском проспекте демонтируют</summary>
-            <iframe src="//vk.com/video_ext.php?oid=-60993553&id=171746793&hash=c0cbc77cc9260585&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
+            <iframe data-src="//vk.com/video_ext.php?oid=-60993553&id=171746793&hash=c0cbc77cc9260585&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
           </details>
-          <details>
+          <details onclick="loadIframe.call(this)">
             <summary>Парковочный раздор: на Приморском проспекте появилась стоянка со странной системой оплаты</summary>
-            <iframe src="//vk.com/video_ext.php?oid=-71533306&id=171702803&hash=ac3ff6e7b58ebb70&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
+            <iframe data-src="//vk.com/video_ext.php?oid=-71533306&id=171702803&hash=ac3ff6e7b58ebb70&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
           </details>
         </li>
 
 
 
 
-<li>Видео с митинга. Фрагмент выступления Вишневского
-<iframe src="//vk.com/video_ext.php?oid=-108036428&id=171719889&hash=7545466d05759179&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe></li>
-
-
-
-
 <li>
-  ТВ "Санкт-Петербург": Для дизайнеров-урбанистов разработают единую концепцию оформления центра Петербурга
-  <iframe src="//vk.com/video_ext.php?oid=-60993553&id=171689196&hash=8f47c5730204947b&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
-</li>
+  <h4>Разное</h4>
+  <details onclick="loadIframe.call(this)">
+  <summary>Видео с митинга. Фрагмент выступления Вишневского</summary>
+<iframe data-src="//vk.com/video_ext.php?oid=-108036428&id=171719889&hash=7545466d05759179&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe></li>
+</details>
 
-<li>
-  Мобильное приложение "Красивый Мир"
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/HTsbthjZTws" frameborder="0" allowfullscreen></iframe>
-</li>
 
-</iframe>
+
+<details onclick="loadIframe.call(this)">
+  <summary>ТВ "Санкт-Петербург": Для дизайнеров-урбанистов разработают единую концепцию оформления центра Петербурга</summary>
+  <iframe data-src="//vk.com/video_ext.php?oid=-60993553&id=171689196&hash=8f47c5730204947b&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
+</details>
+
+<details onclick="loadIframe.call(this)">
+  <summary>Мобильное приложение "Красивый Мир"</summary>
+  <iframe width="560" height="315" data-src="https://www.youtube.com/embed/HTsbthjZTws" frameborder="0" allowfullscreen></iframe>
+</details>
+
+</li>
       </ol>
     </section>
     <footer class="site-footer main-content">
       <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
-        <img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" />
+        <img alt="Creative Commons License" data-src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" />
         <span>Информация доступна на условиях международной лицензии <br />
            Creative Commons Attribution-NonCommercial 4.0
         </span>

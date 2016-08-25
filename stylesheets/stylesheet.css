@@ -15,6 +15,10 @@ a {
 a:hover {
     text-decoration: underline;
 }
+details{
+  margin-bottom: 15px;
+  cursor: pointer;
+}
 .hover-img{
   position: relative;
   cursor: zoom-in;
