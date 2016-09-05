@@ -99,6 +99,10 @@ a:hover {
   outline: 0;
 }
 
+summary{
+  outline:none;
+}
+
 /* Text-level semantics
    ========================================================================== */
 
