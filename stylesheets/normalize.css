@@ -45,7 +45,18 @@ section,
 summary {
   display: block;
 }
+dl, dt, dd{
+  margin: 10px !important;
+	padding: 0;
+}
+dt{
+  width: 150px;
 
+}
+dt, dd{
+  display: inline-block;
+vertical-align: middle;
+}
 /**
  * 1. Correct `inline-block` display not defined in IE 8/9.
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
